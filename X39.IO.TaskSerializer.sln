@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "X39.IO.TaskSerializer", "X39.IO.TaskSerializer\X39.IO.TaskSerializer.csproj", "{A35536E7-9715-4EC0-AF86-B1EE8B120D75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "Testing\Testing.csproj", "{DDAE8CEC-F371-43AF-8156-303BD1222CB2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Files", "Files", "{74AE4FB2-3EAC-4C8A-AFD2-78C2E34CAEFD}"
+	ProjectSection(SolutionItems) = preProject
+		AsyncMethodTaskSerialized.json = AsyncMethodTaskSerialized.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A35536E7-9715-4EC0-AF86-B1EE8B120D75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A35536E7-9715-4EC0-AF86-B1EE8B120D75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A35536E7-9715-4EC0-AF86-B1EE8B120D75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A35536E7-9715-4EC0-AF86-B1EE8B120D75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDAE8CEC-F371-43AF-8156-303BD1222CB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDAE8CEC-F371-43AF-8156-303BD1222CB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDAE8CEC-F371-43AF-8156-303BD1222CB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDAE8CEC-F371-43AF-8156-303BD1222CB2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
