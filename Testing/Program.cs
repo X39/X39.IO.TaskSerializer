@@ -33,7 +33,9 @@ public static class Program
         using var memoryStream = new MemoryStream();
         var awaitableDispatcher = new AwaitableDispatcher();
         awaitableDispatcher.AwaitableReceived += AwaitableDispatcherOnAwaitableReceived;
+        Console.WriteLine("Starting async task...");
         Task.Run(() => Async(awaitableDispatcher));
+        Console.WriteLine("Hit enter to continue");
         Console.ReadLine();
     }
 
@@ -42,5 +44,6 @@ public static class Program
         using var file = new FileStream("serialized.task", FileMode.Create, FileAccess.ReadWrite, FileShare.Read);
         var serializer = new BinaryStateMachineSerializer(file);
         serializer.Serialize(moveNext, asyncStateMachine);
+        Console.WriteLine("Task Serialized to " + Path.GetFullPath("serialized.task"));
     }
 }
