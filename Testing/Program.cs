@@ -10,7 +10,7 @@ public static class Program
 {
     private static async Task Async(AwaitableDispatcher awaitableDispatcher)
     {
-        await awaitableDispatcher.Serialize();
+        await awaitableDispatcher.Dispatch();
         await Async_(0);
         await Async_(5);
         await Async_(10);

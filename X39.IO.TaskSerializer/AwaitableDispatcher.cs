@@ -12,7 +12,7 @@ public class AwaitableDispatcher
     public event AwaitableReceivedDelegate? AwaitableReceived;
 
 
-    public TaskSerializerPromise Serialize()
+    public TaskSerializerPromise Dispatch()
     {
         return new TaskSerializerPromise(TaskSerializerPromiseAwaited);
     }
