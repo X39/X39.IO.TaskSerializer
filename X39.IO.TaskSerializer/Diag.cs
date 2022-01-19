@@ -1,47 +1,18 @@
 ﻿using System.Reflection;
-using JetBrains.Annotations;
+using System.Runtime.CompilerServices;
 using X39.Util;
 
 namespace X39.IO;
 
-[PublicAPI]
-public class TaskSerializer : IAsyncDisposable
+public static class Diag
 {
-    private readonly Stream _streamImplementation;
-    private readonly BinaryWriter _writer;
 
-    public TaskSerializerConfig Config { get; }
-
-    public TaskSerializer(Stream stream)
+    private static async Task WriteAsJson(object? data, IAsyncStateMachine? stateMachine)
     {
-        _streamImplementation = stream;
-        _writer = new BinaryWriter(stream);
-        Config = TaskSerializerConfig.Default;
-    }
-
-    public TaskSerializer(Stream stream, TaskSerializerConfig config)
-    {
-        _streamImplementation = stream;
-        _writer = new BinaryWriter(stream);
-        Config = config;
-    }
-
-    public async ValueTask DisposeAsync()
-    {
-        await _writer.DisposeAsync();
-        await _streamImplementation.DisposeAsync();
-    }
-
-    public async Task Serialize<T>(T data)
-        where T : notnull
-    {
-        var solver = Config.GetSolver<T>();
-        var stateMachine = solver(data);
         await using var stringWriter = new StringWriter();
         WriteAsJson(stringWriter, stateMachine, 0, new List<object>());
         Console.WriteLine(stringWriter.ToString());
     }
-
     private static void WriteAsJson(TextWriter writer, object? data, int depth, List<object> visited)
     {
         // ReSharper disable once AccessToModifiedClosure
@@ -106,6 +77,7 @@ public class TaskSerializer : IAsyncDisposable
 
         void Indent(Action act)
         {
+            // ReSharper disable once AccessToModifiedClosure
             depth++;
             act();
             depth--;
@@ -131,10 +103,35 @@ public class TaskSerializer : IAsyncDisposable
             foreach (var fieldInfo in data.GetType()
                          .GetFields(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic))
             {
-                WritePropertyStart(fieldInfo.Name);
-                // ReSharper disable once AccessToModifiedClosure
-                WriteAsJson(writer, fieldInfo.GetValue(data), depth + 1, visited);
-                WritePropertyEnd();
+                var value = fieldInfo.GetValue(data);
+                if (value is Array array)
+                {
+                    WriteArray(fieldInfo.Name, () =>
+                    {
+                        bool first = true;
+                        foreach (var val in array)
+                        {
+                            if (first)
+                                first = false;
+                            else
+                            {
+                                writer.WriteLine(",");
+                                writer.Write(Tab());
+                            }
+
+                            // ReSharper disable once AccessToModifiedClosure
+                            WriteAsJson(writer, val, depth + 1, visited);
+                        }
+                        writer.WriteLine();
+                    });
+                }
+                else
+                {
+                    WritePropertyStart(fieldInfo.Name);
+                    // ReSharper disable once AccessToModifiedClosure
+                    WriteAsJson(writer, value, depth + 1, visited);
+                    WritePropertyEnd();   
+                }
             }
             WriteProperty("$id", index.ToString(), false);
         });

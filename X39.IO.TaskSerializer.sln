@@ -7,6 +7,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Files", "Files", "{74AE4FB2-3EAC-4C8A-AFD2-78C2E34CAEFD}"
 	ProjectSection(SolutionItems) = preProject
 		AsyncMethodTaskSerialized.json = AsyncMethodTaskSerialized.json
+		PromiseMethodTaskSerialized.json = PromiseMethodTaskSerialized.json
 	EndProjectSection
 EndProject
 Global

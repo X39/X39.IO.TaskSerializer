@@ -94,279 +94,340 @@
 		},
 		"$id": "2"
 	},
-	"<i>5__1": {
-		"type": "System.Int32",
-		"value": "0",
-		"$ref": "1"
-	},
 	"<>u__1": {
 		"type": "System.Runtime.CompilerServices.TaskAwaiter",
 		"value": "System.Runtime.CompilerServices.TaskAwaiter",
 		"m_task": {
-			"type": "System.Threading.Tasks.Task.DelayPromise",
-			"value": "System.Threading.Tasks.Task+DelayPromise",
-			"_timer": {
-				"type": "System.Threading.TimerQueueTimer",
-				"value": "System.Threading.TimerQueueTimer",
-				"_associatedTimerQueue": {
-					"type": "System.Threading.TimerQueue",
-					"value": "System.Threading.TimerQueue",
-					"_id": {
-						"type": "System.Int32",
-						"value": "4",
-						"m_value": {
-							"type": "System.Int32",
-							"value": "4",
-							"$ref": "13"
-						},
-						"$id": "13"
-					},
-					"m_appDomainTimer": {
-						"type": "System.Threading.TimerQueue.AppDomainTimerSafeHandle",
-						"value": "System.Threading.TimerQueue+AppDomainTimerSafeHandle",
-						"handle": {
-							"type": "System.IntPtr",
-							"value": "2176198619920",
-							"_value": {
-								"type": "System.Reflection.Pointer",
-								"value": "System.Reflection.Pointer",
-								"_ptr": {
-									"type": "System.Reflection.Pointer",
-									"value": "System.Reflection.Pointer",
-									"$ref": "16"
-								},
-								"_ptrType": {
-									"type": "System.RuntimeType",
-									"value": "System.Void*",
-									"m_keepalive": {
-										"type": "",
-										"value": "null"
-									},
-									"m_cache": {
-										"type": "System.IntPtr",
-										"value": "2176224139008",
-										"_value": {
-											"type": "System.Reflection.Pointer",
-											"value": "System.Reflection.Pointer",
-											"_ptr": {
-												"type": "System.Reflection.Pointer",
-												"value": "System.Reflection.Pointer",
-												"$ref": "19"
-											},
-											"_ptrType": {
-												"type": "System.RuntimeType",
-												"value": "System.Void*",
-												"$ref": "17"
-											},
-											"$id": "19"
-										},
-										"$id": "18"
-									},
-									"m_handle": {
-										"type": "System.IntPtr",
-										"value": "140734850961634",
-										"_value": {
-											"type": "System.Reflection.Pointer",
-											"value": "System.Reflection.Pointer",
-											"_ptr": {
-												"type": "System.Reflection.Pointer",
-												"value": "System.Reflection.Pointer",
-												"$ref": "21"
-											},
-											"_ptrType": {
-												"type": "System.RuntimeType",
-												"value": "System.Void*",
-												"$ref": "17"
-											},
-											"$id": "21"
-										},
-										"$id": "20"
-									},
-									"$id": "17"
-								},
-								"$id": "16"
-							},
-							"$id": "15"
-						},
-						"$id": "14"
-					},
-					"_isTimerScheduled": {
-						"type": "System.Boolean",
-						"value": "True",
-						"$ref": "6"
-					},
-					"_currentTimerStartTicks": {
-						"type": "System.Int64",
-						"value": "78132940",
-						"m_value": {
-							"type": "System.Int64",
-							"value": "78132940",
-							"$ref": "22"
-						},
-						"$id": "22"
-					},
-					"_currentTimerDuration": {
-						"type": "System.UInt32",
-						"value": "1000",
-						"m_value": {
-							"type": "System.UInt32",
-							"value": "1000",
-							"$ref": "23"
-						},
-						"$id": "23"
-					},
-					"_shortTimers": {
-						"type": "",
-						"value": "null"
-					},
-					"_longTimers": {
-						"type": "System.Threading.TimerQueueTimer",
-						"value": "System.Threading.TimerQueueTimer",
-						"$ref": "11"
-					},
-					"_currentAbsoluteThreshold": {
-						"type": "System.Int64",
-						"value": "78133272",
-						"m_value": {
-							"type": "System.Int64",
-							"value": "78133272",
-							"$ref": "24"
-						},
-						"$id": "24"
-					},
-					"<ActiveCount>k__BackingField": {
-						"type": "System.Int64",
-						"value": "1",
-						"m_value": {
-							"type": "System.Int64",
-							"value": "1",
-							"$ref": "25"
-						},
-						"$id": "25"
-					},
-					"$id": "12"
-				},
-				"_next": {
-					"type": "",
-					"value": "null"
-				},
-				"_prev": {
-					"type": "",
-					"value": "null"
-				},
-				"_short": {
-					"type": "System.Boolean",
-					"value": "False",
-					"$ref": "5"
-				},
-				"_startTicks": {
-					"type": "System.Int64",
-					"value": "78132939",
-					"m_value": {
-						"type": "System.Int64",
-						"value": "78132939",
-						"$ref": "26"
-					},
-					"$id": "26"
-				},
-				"_dueTime": {
-					"type": "System.UInt32",
-					"value": "1000",
-					"$ref": "23"
-				},
-				"_period": {
-					"type": "System.UInt32",
-					"value": "4294967295",
-					"m_value": {
-						"type": "System.UInt32",
-						"value": "4294967295",
-						"$ref": "27"
-					},
-					"$id": "27"
-				},
-				"_timerCallback": {
-					"type": "System.Threading.TimerCallback",
-					"value": "System.Threading.TimerCallback",
-					"_target": {
-						"type": "System.Threading.TimerCallback",
-						"value": "System.Threading.TimerCallback",
-						"$ref": "28"
-					},
-					"_methodBase": {
-						"type": "",
-						"value": "null"
-					},
-					"_methodPtr": {
-						"type": "System.IntPtr",
-						"value": "140734849273920",
-						"_value": {
-							"type": "System.Reflection.Pointer",
-							"value": "System.Reflection.Pointer",
-							"_ptr": {
-								"type": "System.Reflection.Pointer",
-								"value": "System.Reflection.Pointer",
-								"$ref": "30"
-							},
-							"_ptrType": {
-								"type": "System.RuntimeType",
-								"value": "System.Void*",
-								"$ref": "17"
-							},
-							"$id": "30"
-						},
-						"$id": "29"
-					},
-					"_methodPtrAux": {
-						"type": "System.IntPtr",
-						"value": "140734850507320",
-						"_value": {
-							"type": "System.Reflection.Pointer",
-							"value": "System.Reflection.Pointer",
-							"_ptr": {
-								"type": "System.Reflection.Pointer",
-								"value": "System.Reflection.Pointer",
-								"$ref": "32"
-							},
-							"_ptrType": {
-								"type": "System.RuntimeType",
-								"value": "System.Void*",
-								"$ref": "17"
-							},
-							"$id": "32"
-						},
-						"$id": "31"
-					},
-					"$id": "28"
-				},
-				"_state": {
-					"type": "System.Threading.Tasks.Task.DelayPromise",
-					"value": "System.Threading.Tasks.Task+DelayPromise",
-					"$ref": "10"
-				},
-				"_executionContext": {
-					"type": "",
-					"value": "null"
-				},
-				"_callbacksRunning": {
+			"type": "System.Runtime.CompilerServices.AsyncStateMachineBox<System.Threading.Tasks.VoidTaskResult, Program.<Async_>d__1>",
+			"value": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Threading.Tasks.VoidTaskResult,Program+<Async_>d__1]",
+			"_moveNextAction": {
+				"type": "",
+				"value": "null"
+			},
+			"StateMachine": {
+				"type": "Program.<Async_>d__1",
+				"value": "Program+<Async_>d__1",
+				"<>1__state": {
 					"type": "System.Int32",
 					"value": "0",
 					"$ref": "1"
 				},
-				"_canceled": {
-					"type": "System.Boolean",
-					"value": "False",
-					"$ref": "5"
+				"<>t__builder": {
+					"type": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder",
+					"value": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder",
+					"m_task": {
+						"type": "System.Runtime.CompilerServices.AsyncStateMachineBox<System.Threading.Tasks.VoidTaskResult, Program.<Async_>d__1>",
+						"value": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Threading.Tasks.VoidTaskResult,Program+<Async_>d__1]",
+						"$ref": "10"
+					},
+					"$id": "12"
 				},
-				"_everQueued": {
-					"type": "System.Boolean",
-					"value": "False",
-					"$ref": "5"
+				"i": {
+					"type": "System.Int32",
+					"value": "0",
+					"$ref": "1"
 				},
-				"_notifyWhenNoCallbacksRunning": {
-					"type": "",
-					"value": "null"
+				"<>u__1": {
+					"type": "System.Runtime.CompilerServices.TaskAwaiter",
+					"value": "System.Runtime.CompilerServices.TaskAwaiter",
+					"m_task": {
+						"type": "System.Threading.Tasks.Task.DelayPromise",
+						"value": "System.Threading.Tasks.Task+DelayPromise",
+						"_timer": {
+							"type": "System.Threading.TimerQueueTimer",
+							"value": "System.Threading.TimerQueueTimer",
+							"_associatedTimerQueue": {
+								"type": "System.Threading.TimerQueue",
+								"value": "System.Threading.TimerQueue",
+								"_id": {
+									"type": "System.Int32",
+									"value": "1",
+									"m_value": {
+										"type": "System.Int32",
+										"value": "1",
+										"$ref": "17"
+									},
+									"$id": "17"
+								},
+								"m_appDomainTimer": {
+									"type": "System.Threading.TimerQueue.AppDomainTimerSafeHandle",
+									"value": "System.Threading.TimerQueue+AppDomainTimerSafeHandle",
+									"handle": {
+										"type": "System.IntPtr",
+										"value": "2429638199920",
+										"_value": {
+											"type": "System.Reflection.Pointer",
+											"value": "System.Reflection.Pointer",
+											"_ptr": {
+												"type": "System.Reflection.Pointer",
+												"value": "System.Reflection.Pointer",
+												"$ref": "20"
+											},
+											"_ptrType": {
+												"type": "System.RuntimeType",
+												"value": "System.Void*",
+												"m_keepalive": {
+													"type": "",
+													"value": "null"
+												},
+												"m_cache": {
+													"type": "System.IntPtr",
+													"value": "2429664040688",
+													"_value": {
+														"type": "System.Reflection.Pointer",
+														"value": "System.Reflection.Pointer",
+														"_ptr": {
+															"type": "System.Reflection.Pointer",
+															"value": "System.Reflection.Pointer",
+															"$ref": "23"
+														},
+														"_ptrType": {
+															"type": "System.RuntimeType",
+															"value": "System.Void*",
+															"$ref": "21"
+														},
+														"$id": "23"
+													},
+													"$id": "22"
+												},
+												"m_handle": {
+													"type": "System.IntPtr",
+													"value": "140726210826466",
+													"_value": {
+														"type": "System.Reflection.Pointer",
+														"value": "System.Reflection.Pointer",
+														"_ptr": {
+															"type": "System.Reflection.Pointer",
+															"value": "System.Reflection.Pointer",
+															"$ref": "25"
+														},
+														"_ptrType": {
+															"type": "System.RuntimeType",
+															"value": "System.Void*",
+															"$ref": "21"
+														},
+														"$id": "25"
+													},
+													"$id": "24"
+												},
+												"$id": "21"
+											},
+											"$id": "20"
+										},
+										"$id": "19"
+									},
+									"$id": "18"
+								},
+								"_isTimerScheduled": {
+									"type": "System.Boolean",
+									"value": "True",
+									"$ref": "6"
+								},
+								"_currentTimerStartTicks": {
+									"type": "System.Int64",
+									"value": "40980007",
+									"m_value": {
+										"type": "System.Int64",
+										"value": "40980007",
+										"$ref": "26"
+									},
+									"$id": "26"
+								},
+								"_currentTimerDuration": {
+									"type": "System.UInt32",
+									"value": "1000",
+									"m_value": {
+										"type": "System.UInt32",
+										"value": "1000",
+										"$ref": "27"
+									},
+									"$id": "27"
+								},
+								"_shortTimers": {
+									"type": "",
+									"value": "null"
+								},
+								"_longTimers": {
+									"type": "System.Threading.TimerQueueTimer",
+									"value": "System.Threading.TimerQueueTimer",
+									"$ref": "15"
+								},
+								"_currentAbsoluteThreshold": {
+									"type": "System.Int64",
+									"value": "40980339",
+									"m_value": {
+										"type": "System.Int64",
+										"value": "40980339",
+										"$ref": "28"
+									},
+									"$id": "28"
+								},
+								"<ActiveCount>k__BackingField": {
+									"type": "System.Int64",
+									"value": "1",
+									"m_value": {
+										"type": "System.Int64",
+										"value": "1",
+										"$ref": "29"
+									},
+									"$id": "29"
+								},
+								"$id": "16"
+							},
+							"_next": {
+								"type": "",
+								"value": "null"
+							},
+							"_prev": {
+								"type": "",
+								"value": "null"
+							},
+							"_short": {
+								"type": "System.Boolean",
+								"value": "False",
+								"$ref": "5"
+							},
+							"_startTicks": {
+								"type": "System.Int64",
+								"value": "40980007",
+								"$ref": "26"
+							},
+							"_dueTime": {
+								"type": "System.UInt32",
+								"value": "1000",
+								"$ref": "27"
+							},
+							"_period": {
+								"type": "System.UInt32",
+								"value": "4294967295",
+								"m_value": {
+									"type": "System.UInt32",
+									"value": "4294967295",
+									"$ref": "30"
+								},
+								"$id": "30"
+							},
+							"_timerCallback": {
+								"type": "System.Threading.TimerCallback",
+								"value": "System.Threading.TimerCallback",
+								"_target": {
+									"type": "System.Threading.TimerCallback",
+									"value": "System.Threading.TimerCallback",
+									"$ref": "31"
+								},
+								"_methodBase": {
+									"type": "",
+									"value": "null"
+								},
+								"_methodPtr": {
+									"type": "System.IntPtr",
+									"value": "140726209138752",
+									"_value": {
+										"type": "System.Reflection.Pointer",
+										"value": "System.Reflection.Pointer",
+										"_ptr": {
+											"type": "System.Reflection.Pointer",
+											"value": "System.Reflection.Pointer",
+											"$ref": "33"
+										},
+										"_ptrType": {
+											"type": "System.RuntimeType",
+											"value": "System.Void*",
+											"$ref": "21"
+										},
+										"$id": "33"
+									},
+									"$id": "32"
+								},
+								"_methodPtrAux": {
+									"type": "System.IntPtr",
+									"value": "140726210372424",
+									"_value": {
+										"type": "System.Reflection.Pointer",
+										"value": "System.Reflection.Pointer",
+										"_ptr": {
+											"type": "System.Reflection.Pointer",
+											"value": "System.Reflection.Pointer",
+											"$ref": "35"
+										},
+										"_ptrType": {
+											"type": "System.RuntimeType",
+											"value": "System.Void*",
+											"$ref": "21"
+										},
+										"$id": "35"
+									},
+									"$id": "34"
+								},
+								"$id": "31"
+							},
+							"_state": {
+								"type": "System.Threading.Tasks.Task.DelayPromise"
+							,
+								"value": "System.Threading.Tasks.Task+DelayPromise",
+								"$ref": "14"
+							},
+							"_executionContext": {
+								"type": "",
+								"value": "null"
+							},
+							"_callbacksRunning": {
+								"type": "System.Int32",
+								"value": "0",
+								"$ref": "1"
+							},
+							"_canceled": {
+								"type": "System.Boolean",
+								"value": "False",
+								"$ref": "5"
+							},
+							"_everQueued": {
+								"type": "System.Boolean",
+								"value": "False",
+								"$ref": "5"
+							},
+							"_notifyWhenNoCallbacksRunning": {
+								"type": "",
+								"value": "null"
+							},
+							"$id": "15"
+						},
+						"m_action": {
+							"type": "",
+							"value": "null"
+						},
+						"m_stateObject": {
+							"type": "",
+							"value": "null"
+						},
+						"m_taskScheduler": {
+							"type": "",
+							"value": "null"
+						},
+						"m_stateFlags": {
+							"type": "System.Int32",
+							"value": "33555456",
+							"$ref": "8"
+						},
+						"m_contingentProperties": {
+							"type": "",
+							"value": "null"
+						},
+						"$id": "14"
+					},
+					"$id": "13"
 				},
 				"$id": "11"
+			},
+			"Context": {
+				"type": "System.Threading.ExecutionContext",
+				"value": "System.Threading.ExecutionContext",
+				"$ref": "4"
+			},
+			"m_result": {
+				"type": "System.Threading.Tasks.VoidTaskResult",
+				"value": "System.Threading.Tasks.VoidTaskResult",
+				"$ref": "7"
 			},
 			"m_action": {
 				"type": "",

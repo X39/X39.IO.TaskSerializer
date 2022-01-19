@@ -1,0 +1,257 @@
+{
+	"type": "Program.StateMachine",
+	"value": "Program+StateMachine",
+	"state": {
+		"type": "System.Int32",
+		"value": "0",
+		"m_value": {
+			"type": "System.Int32",
+			"value": "0",
+			"$ref": "1"
+		},
+		"$id": "1"
+	},
+	"t__builder": {
+		"type": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder",
+		"value": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder",
+		"m_task": {
+			"type": "System.Runtime.CompilerServices.AsyncStateMachineBox<System.Threading.Tasks.VoidTaskResult, Program.StateMachine>",
+			"value": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Threading.Tasks.VoidTaskResult,Program+StateMachine]",
+			"StateMachine": {
+				"type": "Program.StateMachine",
+				"value": "Program+StateMachine",
+				"$ref": "0"
+			},
+			"_moveNextAction": {
+				"type": "System.Action",
+				"value": "System.Action",
+				"_target": {
+					"type": "System.Runtime.CompilerServices.AsyncStateMachineBox<System.Threading.Tasks.VoidTaskResult, Program.StateMachine>",
+					"value": "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Threading.Tasks.VoidTaskResult,Program+StateMachine]",
+					"$ref": "3"
+				},
+				"_methodBase": {
+					"type": "",
+					"value": "null"
+				},
+				"_methodPtr": {
+					"type": "System.IntPtr",
+					"value": "140726210313936",
+					"_value": {
+						"type": "System.Reflection.Pointer",
+						"value": "System.Reflection.Pointer",
+						"_ptr": {
+							"type": "System.Reflection.Pointer",
+							"value": "System.Reflection.Pointer",
+							"$ref": "6"
+						},
+						"_ptrType": {
+							"type": "System.RuntimeType",
+							"value": "System.Void*",
+							"m_keepalive": {
+								"type": "",
+								"value": "null"
+							},
+							"m_cache": {
+								"type": "System.IntPtr",
+								"value": "1948058523472",
+								"_value": {
+									"type": "System.Reflection.Pointer",
+									"value": "System.Reflection.Pointer",
+									"_ptr": {
+										"type": "System.Reflection.Pointer",
+										"value": "System.Reflection.Pointer",
+										"$ref": "9"
+									},
+									"_ptrType": {
+										"type": "System.RuntimeType",
+										"value": "System.Void*",
+										"$ref": "7"
+									},
+									"$id": "9"
+								},
+								"$id": "8"
+							},
+							"m_handle": {
+								"type": "System.IntPtr",
+								"value": "140726210760930",
+								"_value": {
+									"type": "System.Reflection.Pointer",
+									"value": "System.Reflection.Pointer",
+									"_ptr": {
+										"type": "System.Reflection.Pointer",
+										"value": "System.Reflection.Pointer",
+										"$ref": "11"
+									},
+									"_ptrType": {
+										"type": "System.RuntimeType",
+										"value": "System.Void*",
+										"$ref": "7"
+									},
+									"$id": "11"
+								},
+								"$id": "10"
+							},
+							"$id": "7"
+						},
+						"$id": "6"
+					},
+					"$id": "5"
+				},
+				"_methodPtrAux": {
+					"type": "System.IntPtr",
+					"value": "0",
+					"_value": {
+						"type": "System.Reflection.Pointer",
+						"value": "System.Reflection.Pointer",
+						"_ptr": {
+							"type": "System.Reflection.Pointer",
+							"value": "System.Reflection.Pointer",
+							"$ref": "13"
+						},
+						"_ptrType": {
+							"type": "System.RuntimeType",
+							"value": "System.Void*",
+							"$ref": "7"
+						},
+						"$id": "13"
+					},
+					"$id": "12"
+				},
+				"$id": "4"
+			},
+			"Context": {
+				"type": "System.Threading.ExecutionContext",
+				"value": "System.Threading.ExecutionContext",
+				"m_localValues": {
+					"type": "",
+					"value": "null"
+				},
+				"m_localChangeNotifications": {
+					"type": "",
+					"value": "null"
+				},
+				"m_isFlowSuppressed": {
+					"type": "System.Boolean",
+					"value": "False",
+					"m_value": {
+						"type": "System.Boolean",
+						"value": "False",
+						"$ref": "15"
+					},
+					"$id": "15"
+				},
+				"m_isDefault": {
+					"type": "System.Boolean",
+					"value": "True",
+					"m_value": {
+						"type": "System.Boolean",
+						"value": "True",
+						"$ref": "16"
+					},
+					"$id": "16"
+				},
+				"$id": "14"
+			},
+			"m_result": {
+				"type": "System.Threading.Tasks.VoidTaskResult",
+				"value": "System.Threading.Tasks.VoidTaskResult",
+				"$id": "17"
+			},
+			"m_action": {
+				"type": "",
+				"value": "null"
+			},
+			"m_stateObject": {
+				"type": "",
+				"value": "null"
+			},
+			"m_taskScheduler": {
+				"type": "",
+				"value": "null"
+			},
+			"m_stateFlags": {
+				"type": "System.Int32",
+				"value": "33555456",
+				"m_value": {
+					"type": "System.Int32",
+					"value": "33555456",
+					"$ref": "18"
+				},
+				"$id": "18"
+			},
+			"m_contingentProperties": {
+				"type": "",
+				"value": "null"
+			},
+			"$id": "3"
+		},
+		"$id": "2"
+	},
+	"promise5__1": {
+		"type": "X39.Util.Threading.Tasks.Promise",
+		"value": "X39.Util.Threading.Tasks.Promise",
+		"Exception": {
+			"type": "",
+			"value": "null"
+		},
+		"State": {
+			"type": "X39.Util.Threading.Tasks.EPromiseState",
+			"value": "Primed",
+			"value__": {
+				"type": "System.Int32",
+				"value": "0",
+				"$ref": "1"
+			},
+			"$id": "20"
+		},
+		"Callbacks": {
+			"type": "System.Collections.Generic.List<System.Action>",
+			"value": "System.Collections.Generic.List`1[System.Action]",
+			"_items": [
+				{
+					"type": "System.Action",
+					"value": "System.Action",
+					"$ref": "4"
+				},{
+					"type": "",
+					"value": "null"
+				},{
+					"type": "",
+					"value": "null"
+				},{
+					"type": "",
+					"value": "null"
+				}          ],
+			"_size": {
+				"type": "System.Int32",
+				"value": "1",
+				"m_value": {
+					"type": "System.Int32",
+					"value": "1",
+					"$ref": "22"
+				},
+				"$id": "22"
+			},
+			"_version": {
+				"type": "System.Int32",
+				"value": "1",
+				"$ref": "22"
+			},
+			"$id": "21"
+		},
+		"$id": "19"
+	},
+	"u__1": {
+		"type": "X39.Util.Threading.Tasks.PromiseAwaiter",
+		"value": "X39.Util.Threading.Tasks.PromiseAwaiter",
+		"_promise": {
+			"type": "X39.Util.Threading.Tasks.Promise",
+			"value": "X39.Util.Threading.Tasks.Promise",
+			"$ref": "19"
+		},
+		"$id": "23"
+	},
+	"$id": "0"
+}
+
