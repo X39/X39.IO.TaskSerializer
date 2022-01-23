@@ -41,9 +41,18 @@ public static class Program
 
     private static void AwaitableDispatcherOnAwaitableReceived(AwaitableDispatcher sender, MethodInfo moveNext, IAsyncStateMachine asyncStateMachine)
     {
-        using var file = new FileStream("serialized.task", FileMode.Create, FileAccess.ReadWrite, FileShare.Read);
-        var serializer = new BinaryStateMachineSerializer(file);
-        serializer.Serialize(moveNext, asyncStateMachine);
-        Console.WriteLine("Task Serialized to " + Path.GetFullPath("serialized.task"));
+        // using var stream = new FileStream("serialized.task", FileMode.Create, FileAccess.ReadWrite, FileShare.Read);
+        var stream = new MemoryStream();
+        {
+            var serializer = new BinaryStateMachineSerializer(stream);
+            serializer.Serialize(moveNext, asyncStateMachine);
+            Console.WriteLine("Task Serialized.");
+        }
+        stream = new MemoryStream(stream.ToArray());
+        {
+            var serializer = new BinaryStateMachineSerializer(stream);
+            serializer.Deserialize();
+            Console.WriteLine("Task Deserialized.");
+        }
     }
 }
